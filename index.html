@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Criptografia de César</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
+  
+</head>
   <body>
 
     <div class="container text-center">
@@ -32,7 +33,7 @@
                     <div class="input-group">
                         <input type="number" min="1" max="25" class="form-control" id="chaveCodificar" placeholder="Insira aqui sua chave">
                         <div class="input-group-addon">
-                            <button  id="codificar" class="btn btn-primary" onclick="codificar()">Codificar</button>
+                            <button type="button" id="codificar" class="btn btn-primary">Codificar</button>
                         </div>
                     </div>
                 </div>
@@ -41,7 +42,7 @@
                     <div class="input-group">
                         <input type="number" min="1" max="25" class="form-control" id="chaveDecodificar" placeholder="Insira aqui sua chave">
                         <div class="input-group-addon">
-                            <button id="Descodificar" class="btn btn-success" onclick="decodificar()">Decodificar</button>
+                            <button type="button"  id="Descodificar" class="btn btn-success">Decodificar</button>
                         </div>
                     </div>
                 </div>
@@ -55,8 +56,7 @@
         </div>
     </div>
 
-    <script src="js/cesar.js"></script>
-
+    <script src="./js/cesar.js"></script>
   </body>
 
 </html>
