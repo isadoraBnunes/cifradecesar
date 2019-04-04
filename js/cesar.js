@@ -6,8 +6,8 @@ document.getElementById("codificar").addEventListener('click', () => {
   var resultado = "";
 
   for (var i = 0; i < textoCodificar.length; i++) {
-    var posicionamentoDaLetra = textoCodificar.charCodeAt(i) - 64;
-    var deslocamentoDaLetra = (posicionamentoDaLetra + chaveCodificar) % 26;
+    var posicionamentoDaLetra = textoCodificar.charCodeAt(i)-64;
+    var deslocamentoDaLetra = (posicionamentoDaLetra + parseInt(chaveCodificar)) % 26;
     resultado += array[deslocamentoDaLetra - 1];
   }
   document.getElementById("resultado").innerHTML = resultado;
@@ -21,7 +21,7 @@ document.getElementById("Descodificar").addEventListener('click', () => {
 
   for (var i = 0; i < textoDecodificar.length; i++) {
     var posicionamentoDaLetra = textoDecodificar.charCodeAt(i) - 64;
-    var deslocamentoDaLetra = (posicionamentoDaLetra - chaveDecodificar) % 26;
+    var deslocamentoDaLetra = (posicionamentoDaLetra - parseInt(chaveDecodificar)) % 26;
     resultado += array[deslocamentoDaLetra - 1];
   }
   document.getElementById("resultado").innerHTML = resultado;

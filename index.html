@@ -5,31 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Criptografia de César</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
+
 </head>
   <body>
 
     <div class="container text-center">
-        <h1>Cifra de César</h1>
-        <hr>
-        <form class="" action="index.html" method="post">
+
+      <div class="text-center">
+        <h1 class="display-5 text-uppercase">Cifra de César</h1>
+        <p class="lead">Criptografia e descriptografia de textos no método de César</p>
+        <hr class="mb-5">
+      </div>
+
+      <form class="mb-3" action="index.html" method="post">
 
             <div class="form-row">
-
-                <div class="col">
-                    <textarea id="textoCodificar" name="textoCodiificar" class="form-control" rows="8" cols="80" placeholder="Insira aqui o texto que deseja codificar"></textarea>
+                <div class="col mb-2">
+                    <textarea id="textoCodificar" name="textoCodiificar" class="form-control" rows="5" cols="50" placeholder="Insira aqui o texto que deseja codificar"></textarea>
                 </div>
 
                 <div class="col">
-                    <textarea id="textoDecodificar" name="textoDecodificar" class="form-control" rows="8" cols="80" placeholder="Insira aqui o texto que deseja decifrar"></textarea>
+                    <textarea id="textoDecodificar" name="textoDecodificar" class="form-control" rows="5" cols="50" placeholder="Insira aqui o texto que deseja decifrar"></textarea>
                 </div>
-
             </div>
+
             <br>
 
             <div class="form-row">
 
-                <div class="col">
+                <div class="col mb-3">
                     <div class="input-group">
                         <input type="number" min="1" max="25" class="form-control" id="chaveCodificar" placeholder="Insira aqui sua chave">
                         <div class="input-group-addon">
@@ -40,7 +44,7 @@
 
                 <div class="col">
                     <div class="input-group">
-                        <input type="number" min="1" max="25" class="form-control" id="chaveDecodificar" placeholder="Insira aqui sua chave">
+                        <input type="number" min="1" max="26" class="form-control" id="chaveDecodificar" placeholder="Insira aqui sua chave">
                         <div class="input-group-addon">
                             <button type="button"  id="Descodificar" class="btn btn-success">Decodificar</button>
                         </div>
@@ -50,9 +54,9 @@
             </div>
         </form>
 
-        <h2>Resultado</h2>
+        <h2 class="text-uppercase font-weight-normal mb-3">Resultado</h2>
         <div class="col">
-            <textarea name="resultado" id="resultado" class="form-control" rows="8" cols="80" placeholder="Resultado gerado pela codificação/decodificação" disabled></textarea>
+            <textarea name="resultado" id="resultado" class="form-control" rows="5" cols="50" disabled></textarea>
         </div>
     </div>
 
